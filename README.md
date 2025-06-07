@@ -68,19 +68,11 @@ Install the required libraries using:
 
 TBD
 
-bash
-Copy
-Edit
-
 ### Running the Tool
 
 Use the following command in the terminal:
 
-python gibson_assembly_assistant.py
-
-yaml
-Copy
-Edit
+'''python gibson_assembly_assistant.py'''
 
 ---
 
