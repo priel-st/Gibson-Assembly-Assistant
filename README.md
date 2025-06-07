@@ -71,7 +71,7 @@ TBD
 ### Running the Tool
 
 Use the following command in the terminal:
-<pre> python gibson_assembly_assistant.py </pre>
+<pre> python3 gibson_assembly_assistant.py </pre>
 
 ---
 
