@@ -68,7 +68,7 @@ Install the required libraries using:
 ### Running the Tool
 
 Use the following command in the terminal:
-<pre> python3 gibson_assembly_assistant.py </pre>
+<pre> python gibson_assembly_assistant.py </pre>
 
 ---
 
