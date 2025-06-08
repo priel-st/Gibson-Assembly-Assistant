@@ -30,15 +30,14 @@ These steps are repeated for 20–40 cycles, leading to exponential amplificatio
 
 This project is a virtual assistant for planning Gibson Assembly experiments. In a typical Gibson Assembly workflow, several PCR-based steps are required:
 
-- Plasmid linearization.
-- Preparation of DNA inserts with overhangs.
-- Assembly of the plasmid and inserts.
-- Colony PCR to screen transformed colonies.  
+- Plasmid linearization and preparation of DNA inserts with overhangs.
+- Ligation of the plasmid and inserts.
+- Colony PCR to identify positive colonies.  
 
 Each of these steps requires specific reaction components and calculations — including annealing temperatures, elongation times, and reagent volumes based on DNA concentrations.
 This tool automates the process, helping users quickly and accurately calculate all necessary parameters for each PCR step involved in Gibson Assembly. The goal is to reduce setup time, minimize errors, and provide a consistent planning workflow for molecular biology experiments.
 
-## Input
+## User Input
 
 The tool interacts with the user via the command line and collects information required to plan different PCR-based steps involved in Gibson Assembly. The user is prompted to provide details such as:
 
