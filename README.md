@@ -43,7 +43,7 @@ The tool interacts with the user via the command line and collects information r
 
 - The **type of reaction** (e.g., plasmid linearization, insert amplification, colony PCR).  
 - **Primer sequences** or their **melting temperatures (Tm)**. 
-- The **DNA sequence**(via a .txt file) or the **length (in base pairs)** of the template.  
+- The **DNA sequence** (via a .txt file) or the **length (in base pairs)** of the template.  
 - The **number of samples or reactions** to prepare.  
 - Any additional relevant parameters depending on the selected reaction type.  
 
