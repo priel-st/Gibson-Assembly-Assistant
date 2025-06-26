@@ -35,7 +35,7 @@ This project is a virtual assistant for planning Gibson Assembly experiments. In
 - Colony PCR to identify positive colonies.  
 
 Each of these steps requires specific reaction components and calculations — including annealing temperatures, elongation times, and reagent volumes based on DNA concentrations.
-This tool automates the process, helping users quickly and accurately calculate all necessary parameters for each PCR step involved in Gibson Assembly. The goal is to reduce setup time, minimize errors, and provide a consistent planning workflow for molecular biology experiments.
+This tool automates the process, helping users quickly and accurately calculate the necessary parameters for each PCR step involved in Gibson Assembly. The goal is to reduce setup time, minimize errors, and provide a consistent planning workflow for molecular biology experiments.
 
 ## User Input
 
@@ -52,17 +52,20 @@ The tool interacts with the user via the command line and collects information r
 The tool provides the user with:
 
 - A **command-line summary** displaying all calculated parameters, including reagent volumes, annealing temperatures, and elongation times, for quick reference.  
-- A **CSV file** that serves as a complete PCR protocol, including all relevant inputs and calculated values.
+- A **docx file** that serves as a complete PCR protocol, including all relevant inputs and calculated values.
 
 ## Technical Information and Installation
 
-This project is written in **Python 3**.
+This project is written in **Python 3.8+**.
 
 ### Installation
 
-Install the required libraries using:
+1. Clone this repository:
+<pre> git clone https://github.com/priel-st/Gibson-Assembly-Assistant.git
+cd Gibson-Assembly-Assistant </pre>
 
-<pre> TBD </pre>
+2. Install required libraries:
+<pre> pip install -r requirements.txt </pre>
 
 ### Running the Tool
 
