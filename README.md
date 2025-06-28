@@ -34,7 +34,7 @@ This project is a virtual assistant for planning Gibson Assembly experiments. In
 - Ligation of the plasmid and inserts.
 - Colony PCR to identify positive colonies.  
 
-Each of these steps requires specific reaction components and calculations — including annealing temperatures, elongation times, and reagent volumes based on DNA concentrations.
+Each of these steps requires specific reaction components and calculations - including annealing temperatures, elongation times, and reagent volumes based on DNA concentrations.
 This tool automates the process, helping users quickly and accurately calculate the necessary parameters for each PCR step involved in Gibson Assembly. The goal is to reduce setup time, minimize errors, and provide a consistent planning workflow for molecular biology experiments.
 
 ## User Input
