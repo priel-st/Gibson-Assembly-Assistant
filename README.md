@@ -62,15 +62,15 @@ This project is written in **Python 3.8+**.
 
 1. Clone this repository:
 <pre>git clone https://github.com/priel-st/Gibson-Assembly-Assistant.git
-cd Gibson-Assembly-Assistant </pre>
+cd Gibson-Assembly-Assistant</pre>
 
 2. Install required libraries:
-<pre> pip install -r requirements.txt </pre>
+<pre>pip install -r requirements.txt</pre>
 
 ### Running the Tool
 
 Use the following command in the terminal:
-<pre> python gibson_assembly_assistant.py </pre>
+<pre>python gibson_assembly_assistant.py</pre>
 
 ---
 
