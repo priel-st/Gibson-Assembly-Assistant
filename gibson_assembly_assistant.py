@@ -166,11 +166,11 @@ def ligation_amounts():
         excess = total - 3
         if plasmid_final >= insert_final:
             reduced = plasmid_final - excess
-            reduction_note = f"Vector concentration reduced from {plasmid_final:.2f} to {reduced:.2f} ng/µL to keep total at 3 ng/µL"
+            reduction_note = f"Vector volume reduced from {plasmid_final:.2f} to {reduced:.2f} µL to keep total at 3 µL"
             plasmid_final = reduced
         else:
             reduced = insert_final - excess
-            reduction_note = f"Insert concentration reduced from {insert_final:.2f} to {reduced:.2f} ng/µL to keep total at 3 ng/µL"
+            reduction_note = f"Insert volume reduced from {insert_final:.2f} to {reduced:.2f} µL to keep total at 3 µL"
             insert_final = reduced
     
     final_vec_vol = round(plasmid_final, 2)
