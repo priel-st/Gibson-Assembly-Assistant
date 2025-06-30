@@ -72,6 +72,10 @@ cd Gibson-Assembly-Assistant</pre>
 Use the following command in the terminal:
 <pre>python gibson_assembly_assistant.py</pre>
 
+### Examples
+
+To test the tool and look at example use cases, please check the [EXAMPLES.md](EXAMPLES.md) page.
+
 ---
 
 This project was created as part of the [Python programming course](https://github.com/Code-Maven/wis-python-course-2025-03) at the [Weizmann Institute of Science](https://www.weizmann.ac.il/pages/).  
