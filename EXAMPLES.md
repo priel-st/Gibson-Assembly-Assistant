@@ -1,10 +1,10 @@
-#Examples
+# Examples
 
 This section provides example runs for each type of reaction in the Gibson Assembly Assistant.
 
-##Plasmid Linearization / Insert Preparation
+## Plasmid Linearization / Insert Preparation
 
-###Input:
+### Input:
 
 - What type of PCR reaction are you planning? → **Plasmid linearization / Insert preparation**
 - Do you know the Tm of your primers? → **Yes**
@@ -15,7 +15,7 @@ This section provides example runs for each type of reaction in the Gibson Assem
 - Enter the number of samples: → **1**
 - Are you linearizing a plasmid or preparing an insert with overhangs? → **Linearizing a plasmid**
 
-###Output:
+### Output:
 
 <pre>Annealing temperature               53.95 °C
 Elongation time                     1:49 min
@@ -25,9 +25,9 @@ Forward primer (undiluted)          1 µL
 Reverse primer (undiluted)          1 µL
 DNA amount                          2 µL</pre>
 
-##Ligation
+## Ligation
 
-###Input:
+### Input:
 
 - What type of PCR reaction are you planning? → **Ligation**
 - Do you know the size of your linearized vector? → **Yes**
@@ -37,7 +37,7 @@ DNA amount                          2 µL</pre>
 - Enter the path to a text file containing the insert with overhangs sequence: → **dna_seq_example.txt**
 - Enter the concentration of the insert (in ng/µL): → **140**
 
-###Output:
+### Output:
 
 <pre>Enzyme mix                          7.5 µL
 Vector dilution                     1:2
@@ -46,9 +46,9 @@ Vector                              1.86 µL
 Insert                              1.12 µL
 Attention                           None</pre>
 
-##Colony PCR
+## Colony PCR
 
-###Input:
+### Input:
 
 - What type of PCR reaction are you planning? → **Colony PCR**
 - Do you know the Tm of your primers? → **No**
@@ -58,7 +58,7 @@ Attention                           None</pre>
 - Enter the path to your DNA sequence file (or just the filename): → **dna_seq_example.txt**
 - Enter the number of samples: → **3**
 
-###Output:
+### Output:
 
 <pre>Annealing temperature               65.35 °C
 Elongation time                     16.34 sec
