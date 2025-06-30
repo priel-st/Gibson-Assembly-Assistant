@@ -70,4 +70,5 @@ Colony                              Add manually</pre>
 
 ---
 
-For each experiment, you will also be asked to enter an experiment name, and you can choose to generate a '.docx' file of the protocol, which will be saved in the same folder.
+* For each experiment, you will also be asked to enter an experiment name, and you can choose to generate a '.docx' file of the protocol. This file will be saved in the same folder as the script.
+* You can test these examples using the provided **dna_seq_example.txt** file.
