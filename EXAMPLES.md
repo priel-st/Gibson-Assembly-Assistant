@@ -46,6 +46,9 @@ Vector                              1.86 µL
 Insert                              1.12 µL
 Attention                           None</pre>
 
+* An Attention note will appear when the volume of either the vector or the insert needs to be reduced to keep the total reaction volume within the 3 µL limit.
+
+
 ## Colony PCR
 
 ### Input:
