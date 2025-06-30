@@ -51,8 +51,16 @@ def elongation_time_calc(reaction_type):
     if knows_dna_size == "Yes":
         dna_size = int(questionary.text("Enter the DNA size (in bp):").ask())
     elif knows_dna_size == "No":
+        script_dir = os.path.dirname(__file__)
         while True:
-            dna_seq_path = questionary.text("Enter the path to a text file containing the DNA sequence (including primers):").ask()
+            user_input = questionary.text(
+            "Enter the path to your DNA sequence file (or just the filename):"
+        ).ask()
+            dna_seq_path = (
+                user_input
+                if os.path.isabs(user_input)
+                else os.path.join(script_dir, user_input)
+            )
             if os.path.isfile(dna_seq_path):
                 break
             else:
@@ -98,8 +106,15 @@ def ligation_amounts():
     if knows_vector_size == "Yes":
         lin_vector_size = int(questionary.text("Enter the linearized vector size (in bp):").ask())
     elif knows_vector_size == "No":
+        script_dir = os.path.dirname(__file__)
         while True:
-            lin_vector_seq_path = questionary.text("Enter the path to a text file containing the linearized vector sequence:").ask()
+            user_input = questionary.text(
+            "Enter the path to a text file containing the linearized vector sequence:").ask()
+            lin_vector_seq_path = (
+                user_input
+                if os.path.isabs(user_input)
+                else os.path.join(script_dir, user_input)
+            )
             if os.path.isfile(lin_vector_seq_path):
                 break
             else:
@@ -116,9 +131,15 @@ def ligation_amounts():
     if knows_insert_size == "Yes":
         insert_size = int(questionary.text("Enter the insert size (in bp):").ask())
     elif knows_insert_size == "No":
-        insert_seq_path = questionary.text("Enter the path to a text file containing the insert with overhangs sequence:").ask()
+        script_dir = os.path.dirname(__file__)
         while True:
-            insert_seq_path = questionary.text("Enter the path to a text file containing the insert with overhangs sequence:").ask()
+            user_input = questionary.text(
+            "Enter the path to a text file containing the insert with overhangs sequence:").ask()
+            insert_seq_path = (
+                user_input
+                if os.path.isabs(user_input)
+                else os.path.join(script_dir, user_input)
+            )
             if os.path.isfile(insert_seq_path):
                 break
             else:
