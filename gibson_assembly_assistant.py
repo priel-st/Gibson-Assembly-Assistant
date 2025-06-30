@@ -73,7 +73,7 @@ def elongation_time_calc(reaction_type):
     if 60<elong_time<120:
         seconds = elong_time-60
         elong_time = f"1:{round(seconds)}"
-    if elong_time>120:
+    elif elong_time>120:
         seconds = elong_time-120
         elong_time = f"2:{round(seconds)}"
     return elong_time
