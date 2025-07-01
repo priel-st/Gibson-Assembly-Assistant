@@ -54,7 +54,7 @@ def elongation_time_calc(reaction_type):
         script_dir = os.path.dirname(__file__)
         while True:
             user_input = questionary.text(
-            "Enter the path or filename of your DNA sequence file (including primers):"
+            "Enter the path or filename of your DNA sequence text file (including primers):"
         ).ask()
             dna_seq_path = (
                 user_input
@@ -109,7 +109,7 @@ def ligation_amounts():
         script_dir = os.path.dirname(__file__)
         while True:
             user_input = questionary.text(
-            "Enter the path to a text file containing the linearized vector sequence:").ask()
+            "Enter the path or filename of the text file containing the linearized vector sequence:").ask()
             lin_vector_seq_path = (
                 user_input
                 if os.path.isabs(user_input)
@@ -134,7 +134,7 @@ def ligation_amounts():
         script_dir = os.path.dirname(__file__)
         while True:
             user_input = questionary.text(
-            "Enter the path to a text file containing the insert with overhangs sequence:").ask()
+            "Enter the path or filename of the text file containing the insert sequence (including overhangs):").ask()
             insert_seq_path = (
                 user_input
                 if os.path.isabs(user_input)
