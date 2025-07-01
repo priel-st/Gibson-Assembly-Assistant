@@ -8,11 +8,11 @@ This section provides example runs for each type of reaction in the Gibson Assem
 
 - What type of PCR reaction are you planning? → **Plasmid linearization / Insert preparation**
 - Do you know the melting temperatures (Tm) of your primers? → **Yes**
-- Enter the Tm of your forward primer (in °C): → **60.1**
-- Enter the Tm of your reverse primer (in °C): → **57.8**
+- Enter the Tm of your forward primer (in °C) → **60.1**
+- Enter the Tm of your reverse primer (in °C) → **57.8**
 - Do you know the size of your DNA sequence? → **Yes**
-- Enter the DNA size (in bp): → **10857**
-- Enter the number of samples: → **1**
+- Enter the DNA size (in bp) → **10857**
+- Enter the number of samples → **1**
 - Are you linearizing a plasmid or preparing an insert with overhangs? → **Linearizing a plasmid**
 
 ### Output:
@@ -31,11 +31,11 @@ DNA amount                          2 µL</pre>
 
 - What type of PCR reaction are you planning? → **Ligation**
 - Do you know the size of your linearized vector? → **Yes**
-- Enter the linearized vector size (in bp): → **10857**
-- Enter the concentration of the linearized vector (in ng/µL): → **70**
+- Enter the linearized vector size (in bp) → **10857**
+- Enter the concentration of the linearized vector (in ng/µL) → **70**
 - Do you know the size of your insert (with overhangs)? → **No**
-- Enter the path or filename of the text file containing the insert sequence (including overhangs): → **dna_seq_example.txt**
-- Enter the concentration of the insert (in ng/µL): → **140**
+- Enter the path or filename of the text file containing the insert sequence (including overhangs) → **dna_seq_example.txt**
+- Enter the concentration of the insert (in ng/µL) → **140**
 
 ### Output:
 
@@ -55,11 +55,11 @@ Attention                           None</pre>
 
 - What type of PCR reaction are you planning? → **Colony PCR**
 - Do you know the melting temperatures (Tm) of your primers? → **No**
-- Enter the sequence of your forward primer: → **gttagagggagctctgatcactgagGGAGATGCAGTGAGTGGGTGAACGG**
-- Enter the sequence of your reverse primer: → **CAATTCCTTGTCTTCTCTGATACAGtttaagagacgcaaccacaacgctc**
+- Enter the sequence of your forward primer → **gttagagggagctctgatcactgagGGAGATGCAGTGAGTGGGTGAACGG**
+- Enter the sequence of your reverse primer → **CAATTCCTTGTCTTCTCTGATACAGtttaagagacgcaaccacaacgctc**
 - Do you know the size of your DNA sequence? → **No**
-- Enter the path or filename of your DNA sequence text file (including primers): → **dna_seq_example.txt**
-- Enter the number of samples: → **3**
+- Enter the path or filename of your DNA sequence text file (including primers) → **dna_seq_example.txt**
+- Enter the number of samples → **3**
 
 ### Output:
 
