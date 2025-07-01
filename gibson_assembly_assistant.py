@@ -10,7 +10,7 @@ def annealing_temp_calc():
     fw_primer = None
     rv_primer = None
     knows_tm = questionary.select(
-        "Do you know the Tm of your primers?",
+        "Do you know the melting temperatures (Tm) of your primers?",
         choices=[
             "Yes",
             "No"
@@ -18,8 +18,8 @@ def annealing_temp_calc():
     ).ask()
     if knows_tm == "Yes":
         while True:
-            fw_tm = questionary.text("Enter the Tm of your FW primer (in \u00B0C):").ask()
-            rv_tm = questionary.text("Enter the Tm of your RV primer (in \u00B0C):").ask()
+            fw_tm = questionary.text("Enter the Tm of your forward primer (in \u00B0C):").ask()
+            rv_tm = questionary.text("Enter the Tm of your reverse primer (in \u00B0C):").ask()
             try:
                 fw_tm = float(fw_tm)
                 rv_tm = float(rv_tm)
@@ -28,8 +28,8 @@ def annealing_temp_calc():
                 print("Please enter valid numeric values")
     elif knows_tm == "No":
         while True:
-            fw_primer = (questionary.text("Enter the sequence of your FW primer:").ask()).upper()
-            rv_primer = (questionary.text("Enter the sequence of your RV primer:").ask()).upper()
+            fw_primer = (questionary.text("Enter the sequence of your forward primer:").ask()).upper()
+            rv_primer = (questionary.text("Enter the sequence of your reverse primer:").ask()).upper()
             if fw_primer.isalpha() and rv_primer.isalpha():
                 fw_tm = mt.Tm_NN(fw_primer, Na=50, dnac1=75)
                 rv_tm = mt.Tm_NN(rv_primer, Na=50, dnac1=75)
@@ -54,7 +54,7 @@ def elongation_time_calc(reaction_type):
         script_dir = os.path.dirname(__file__)
         while True:
             user_input = questionary.text(
-            "Enter the path to your DNA sequence file (or just the filename):"
+            "Enter the path or filename of your DNA sequence file (including primers):"
         ).ask()
             dna_seq_path = (
                 user_input
@@ -325,7 +325,7 @@ def main():
         if start_again == "Yes":
             main()
         else:
-            print("Exits program")
+            print("Exiting program")
             return None
 
 
@@ -362,7 +362,7 @@ def main():
         if start_again == "Yes":
             main()
         else:
-            print("Exits program")
+            print("Exiting program")
             return None
 
     elif reaction_type == "Ligation":
@@ -390,7 +390,7 @@ def main():
         if start_again == "Yes":
             main()
         else:
-            print("Exits program")
+            print("Exiting program")
             return None
 
 #Beginning
