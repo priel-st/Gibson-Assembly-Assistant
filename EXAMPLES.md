@@ -7,9 +7,9 @@ This section provides example runs for each type of reaction in the Gibson Assem
 ### Input:
 
 - What type of PCR reaction are you planning? → **Plasmid linearization / Insert preparation**
-- Do you know the Tm of your primers? → **Yes**
-- Enter the Tm of your FW primer (in °C): → **60.1**
-- Enter the Tm of your RV primer (in °C): → **57.8**
+- Do you know the melting temperatures (Tm) of your primers? → **Yes**
+- Enter the Tm of your forward primer (in °C): → **60.1**
+- Enter the Tm of your reverse primer (in °C): → **57.8**
 - Do you know the size of your DNA sequence? → **Yes**
 - Enter the DNA size (in bp): → **10857**
 - Enter the number of samples: → **1**
@@ -34,7 +34,7 @@ DNA amount                          2 µL</pre>
 - Enter the linearized vector size (in bp): → **10857**
 - Enter the concentration of the linearized vector (in ng/µL): → **70**
 - Do you know the size of your insert (with overhangs)? → **No**
-- Enter the path to a text file containing the insert with overhangs sequence: → **dna_seq_example.txt**
+- Enter the path or filename of the text file containing the insert sequence (including overhangs): → **dna_seq_example.txt**
 - Enter the concentration of the insert (in ng/µL): → **140**
 
 ### Output:
@@ -54,11 +54,11 @@ Attention                           None</pre>
 ### Input:
 
 - What type of PCR reaction are you planning? → **Colony PCR**
-- Do you know the Tm of your primers? → **No**
-- Enter the sequence of your FW primer: → **gttagagggagctctgatcactgagGGAGATGCAGTGAGTGGGTGAACGG**
-- Enter the sequence of your RV primer: → **CAATTCCTTGTCTTCTCTGATACAGtttaagagacgcaaccacaacgctc**
+- Do you know the melting temperatures (Tm) of your primers? → **No**
+- Enter the sequence of your forward primer: → **gttagagggagctctgatcactgagGGAGATGCAGTGAGTGGGTGAACGG**
+- Enter the sequence of your reverse primer: → **CAATTCCTTGTCTTCTCTGATACAGtttaagagacgcaaccacaacgctc**
 - Do you know the size of your DNA sequence? → **No**
-- Enter the path to your DNA sequence file (or just the filename): → **dna_seq_example.txt**
+- Enter the path or filename of your DNA sequence text file (including primers): → **dna_seq_example.txt**
 - Enter the number of samples: → **3**
 
 ### Output:
